@@ -1,2 +1,2 @@
-# vPin-MAME-TestKit
-Forked from tmek's project from 2015
+# PinballEventProtocol
+Open Source Pinball Event Protocol 
