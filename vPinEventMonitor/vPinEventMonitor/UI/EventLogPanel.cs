@@ -12,14 +12,6 @@ public class EventLogPanel : UserControl
 
     public EventLogPanel()
     {
-        _btnClear = new Button
-        {
-            Text   = "Clear",
-            Dock   = DockStyle.Bottom,
-            Height = 28
-        };
-        _btnClear.Click += (_, _) => _log.Clear();
-
         _log = new TextBox
         {
             Multiline   = true,
@@ -31,6 +23,14 @@ public class EventLogPanel : UserControl
             ForeColor   = Color.LimeGreen,
             WordWrap    = false
         };
+
+        _btnClear = new Button
+        {
+            Text   = "Clear",
+            Dock   = DockStyle.Bottom,
+            Height = 28
+        };
+        _btnClear.Click += (_, _) => _log.Clear();
 
         Controls.Add(_log);
         Controls.Add(_btnClear);
